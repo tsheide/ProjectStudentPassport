@@ -1,5 +1,5 @@
 
-//This global variable is set to contain the information needed to make a request of the Google App Script server.
+//This global variable is set to contain the information needed to make a request of the Google App Script server
 const gas_end_point = 'https://script.google.com/macros/s/'+gas_deployment_id+'/exec'
 
 //This global variable defines the first two navigation items in the menu. In this app there are only two main navigation items "Home" and "Locations". These two menu items are visible regardless of login status.  
