@@ -238,7 +238,7 @@ async function show_task_list(){
 
     tag("canvas").innerHTML=` 
         <div class="page">
-            <div id="learning-title" style="text-align:center"><h2>Learning Outcomes</h2></div>
+            <div id="learning-title" style="text-align:center"><h1>Learning Outcomes</h1></div>
             <div id="learning-message" style="width:100%"></div>
             <div id="learning_panel"  style="width:100%">
             </div>

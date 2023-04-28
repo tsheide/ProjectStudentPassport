@@ -127,9 +127,10 @@ h2{
     color: maroon;
     background-color: lightyellow;
     margin:1px;
-    padding: 40px 8px 4px 8px;
+    padding: 20px 8px 4px 20px;
     text-align: center;
     height: auto;
+    font-size: x-large;
 }
 .learning-table td {
     color: black;
@@ -137,10 +138,11 @@ h2{
     padding: 20px 8px 4px 8px;
     white-space: normal;
     text-align: center;
-    border: aqua;
-    border-width: thick;
+
+    border-width: thin;
+    border-color: black;
     font-family: 'Courier New', Courier, monospace;
-    background-color: aqua;
+    background-color: rgb(237, 248, 248);
 
 }
 
