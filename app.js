@@ -283,6 +283,7 @@ async function show_task_list(){
             html.push(`<td>${record.fields.Completed}</td>`)
             html.push(`<td><a class="tools" onclick="record_task('${record.id}')">Mark as Complete</a></td>`)
             html.push('<tr>')
+            
         }
 
             html.push('</table>')
