@@ -257,13 +257,46 @@ async function show_task_list(){
     
         //console.log("response", response)
         //build the HMTL heading for the report
-        tag("learning-title").innerHTML=`<h2>Learning Outcomes Checklist</h2>`
+        tag("learning-title").innerHTML=`<h1>Learning Outcomes Checklist</h1>`
 
 
         //Build the table to display the report. The columns of the table are: Flavor, the stores available to the user, and the total inventory. Since only the owner is given the option to view inventory counts (see the autheticated_user global variable), all stores will be shown in the report.
         const header=[`
         <table class="learning-table">
             <tr>
+            <html>
+            <head>
+            <body>
+            <form class="sticky" action="/action_page.php">
+            <label id="dropbtnz" for="courses">Choose a course:</label>
+            <br><br>
+            <select name="Course" id="courses" class="dropbtn">
+                <option value="fm">Family Medicine 1</option>
+                <option value="hlo">Behavioral Health Learning Outcomes</option>
+                <option value="ped">Pediatrics</option>
+                <option value="wh">Women's Health</option>
+                <option value="im">Internal Medicine</option>
+                <option value="fm2">Family Medicine 2</option>
+                <option value="sur">Surgery</option>
+                <option value="em">Emergency Medicine</option>
+            </select>
+            <br><br>
+            <label id="dropbtnz" for="courses">Choose a student:</label>
+            <br><br>
+            <select name="Course" id="courses" class="dropbtn">
+                <option value="fm">John Smith</option>
+                <option value="hlo">Camila Smith</option>
+                <option value="ped">Pablo Green</option>
+                <option value="ped">Ken Jhonson</option>
+                <option value="ped">James Charles</option>
+                <option value="ped">George Bolt</option>
+                <option value="ped">Emily Davis</option>
+            </select>
+            <br><br>
+            <input class="dropbtn" type="submit" value="Submit">
+            </form>
+            </body>
+            </html>
             <th class="sticky">Course Name</th>
             <th class="sticky">Learning Outcome</th>
             <th class="sticky">Completed</th>
@@ -281,7 +314,7 @@ async function show_task_list(){
             html.push(`<td>${record.fields.Name_Course}</td>`)
             html.push(`<td>${record.fields.Name}</td>`)
             html.push(`<td>${record.fields.Completed}</td>`)
-            html.push(`<td><a class="tools" onclick="record_task('${record.id}')">Mark as Complete</a></td>`)
+            html.push(`<td><a class="tools" onclick="record_task('${record.id}')">Mark as Complete?</a></td>`)
             html.push('<tr>')
             
         }

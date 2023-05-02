@@ -60,8 +60,12 @@ h2{
 }
 
 .tools{
+    font-size: larger;
     color:grey;
     cursor:pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: blue;
 }
 
 .tools:hover{
@@ -153,4 +157,17 @@ tr {
     white-space: pre-wrap;
     text-align: center;
 
+}
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+#droptbtnz{
+  color: maroon;
+  font-size: x-large;
 }
